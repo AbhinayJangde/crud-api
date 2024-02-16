@@ -6,13 +6,13 @@ import productRoute from "./routes/product.route.js"
 dotenv.config()
 const app = express()
 const port = process.env.PORT
-const password = process.env.PASSWORD
+const uri = process.env.DB_URI
 // Middlewares
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
 // Database connection
-db(password)
+db(uri)
 
 // Proudct Routes
 app.use("/api",productRoute)

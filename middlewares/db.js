@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-const db = (password) => {
+const db = (uri) => {
     // Database connection
-    mongoose.connect(`mongodb+srv://Abhi:${password}@cluster0.dxmil.mongodb.net/Node-API?retryWrites=true&w=majorit`)
+    mongoose.connect(uri)
         .then(() => {
             console.log("Connected to database!")
         })
