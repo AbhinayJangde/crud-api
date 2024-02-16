@@ -26,3 +26,6 @@
         - package-lock.json
         - package.json
         - readme.md
+
+# Contributors
+    - Abhinay Jangde (abhinayjangde@gmail.com)
